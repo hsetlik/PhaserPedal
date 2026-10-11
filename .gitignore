@@ -1,0 +1,17 @@
+bom
+*.ld
+Enclosure/*.ai
+Datasheets
+*/Debug
+*/Release
+*/.DS_STORE
+AttenuatorSim/*backups
+AlgorithmInfo/*.zip
+PhaserPedalBoard*/*backups
+PhaserPedalBoard*/gerber
+PhaserPedalBoard*/*cache
+PhaserPedalBoard*/*.zip
+PhaserPedalBoard*/*.lck
+*/.history
+*.history
+*-backups
