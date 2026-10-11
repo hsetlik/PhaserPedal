@@ -22,8 +22,13 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(255, 255, 51)",
-          "signal": "V(/Vout)",
+          "color": "rgb(55, 126, 184)",
+          "signal": "I(Q6:c)",
+          "trace_type": 258
+        },
+        {
+          "color": "rgb(152, 78, 163)",
+          "signal": "V(/Vlfo)",
           "trace_type": 257
         }
       ]
