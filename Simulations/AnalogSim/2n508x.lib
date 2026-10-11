@@ -1,0 +1,4 @@
+
+.model 2N5087 PNP (Is=6.734f Xti=3 Eg=1.11 Vaf=45.7 Bf=254.1 Ne=1.741 Ise=50.31p Ikf=150.3m Xtb=1.5 Br=3.325 Nc=2 Isc=0 Ikr=0 Rc=1.284 Cjc=10.69p Mjc=0.3134 Vjc=0.75 Fc=0.5 Cje=14.39p Mje=0.377 Vje=0.75 Tr=10.01n Tf=587.3p Itf=0.4 Vtf=4 Xtf=2 Rb=10)
+.model 2N5088 NPN (Is=5.911f Xti=3 Eg=1.11 Vaf=62.37 Bf=1.122K Ne=1.394 Ise=5.911f Ikf=14.92m Xtb=1.5 Br=1.271 Nc=2 Isc=0 Ikr=0 Rc=1.61 Cjc=4.017p Mjc=.3174 Vjc=.75 Fc=.5 Cje=4.973p Mje=.4146 Vje=.75 Tr=4.673n Tf=821.7p Itf=.35 Vtf=4 Xtf=7 Rb=10)
+
