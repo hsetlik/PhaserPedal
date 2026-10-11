@@ -1,0 +1,6 @@
+* basic SPICE subcircuit for modeling a SPDT switch
+
+.subckt SPDT pol1 com pol2 params: swpos=1 ron=1m roff=1g
+R1 pol1 com {((swpos >= 1) ? ron : roff)}
+R2 com pol2 {((swpos >= 1) ? roff : ron)}
+.ends
