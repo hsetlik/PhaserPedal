@@ -416,7 +416,7 @@
         "uuid": "121c4899-4e95-4dc0-b332-63e8ed3089d8"
       }
     ],
-    "used_designators": "NT1,J1-2,U1,U4,L1,#PWR1-4,#PWR29,#PWR31,#PWR34,#PWR60-61,#PWR145,#PWR149-152,#PWR158,C16-17,C19,C24-26,C122-125,D1,R40,R144-146",
+    "used_designators": "V1,V3,U2-3,U5,SW1,#PWR1-3,#PWR5-24,#PWR30,#PWR36,#PWR153,C1-16,C18,Q4-6,R1-3,R5-34,R38-42,R147,J1,J7",
     "variants": []
   },
   "sheets": [
@@ -427,6 +427,10 @@
     [
       "90bb61a7-a0ad-417b-bedc-65bd7068296f",
       "Power"
+    ],
+    [
+      "eeafeccd-f74a-4a10-9f05-704884f9b4d0",
+      "Analog"
     ]
   ],
   "text_variables": {},
