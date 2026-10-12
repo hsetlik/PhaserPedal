@@ -2165,9 +2165,9 @@
 		)
 		(uuid "b5d2fa39-61ff-4e61-b0a4-750e4968fd6b")
 	)
-	(text "IO/Power Header"
+	(text "Power Jack"
 		(exclude_from_sim no)
-		(at 38.1 23.876 0)
+		(at 30.988 24.13 0)
 		(effects
 			(font
 				(size 3.048 3.048)
