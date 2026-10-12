@@ -6,6 +6,52 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
+		(at 106.045 21.59)
+		(size 38.735 33.655)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "337bd860-9d0a-468c-ab48-5592dad52d55")
+		(property "Sheetname" "Digital"
+			(at 106.045 20.8784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Digital.kicad_sch"
+			(at 106.045 55.8296 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 24.765 21.59)
 		(size 38.735 33.655)
 		(exclude_from_sim no)

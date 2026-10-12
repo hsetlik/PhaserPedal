@@ -1113,6 +1113,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2692,6 +2815,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+12VA"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+12VA"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12VA\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+12VA_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12VA_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -2834,7 +3096,7 @@
 		(uuid "1558d39e-a430-4d34-8161-4571bee98888")
 	)
 	(junction
-		(at 63.5 161.798)
+		(at 43.18 183.388)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d916ad3-f65f-4017-9654-794f7a8967c4")
@@ -2858,7 +3120,7 @@
 		(uuid "33c443b8-7d4e-49ec-ae5a-a27b33754cad")
 	)
 	(junction
-		(at 203.962 168.148)
+		(at 210.312 189.738)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "342c4d7f-ea1a-42c8-ba5e-a2182bd0af27")
@@ -2882,7 +3144,7 @@
 		(uuid "59ca17b2-2a28-4c59-87ab-e0aa71820eae")
 	)
 	(junction
-		(at 73.66 171.196)
+		(at 53.34 192.786)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5a19199d-21c7-4bfd-a5c4-38c0dbaca7c2")
@@ -2900,13 +3162,13 @@
 		(uuid "6307d2b9-e3d3-4422-ac7b-0977c8a68a5a")
 	)
 	(junction
-		(at 107.95 173.736)
+		(at 87.63 195.326)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "678635ef-eb79-4e67-9b31-89b108b715e3")
 	)
 	(junction
-		(at 203.962 202.438)
+		(at 210.312 224.028)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ea0f660-eebe-4a74-8c62-165e9a6069bd")
@@ -2924,7 +3186,7 @@
 		(uuid "6ffb5767-c0c5-4ecb-ba45-76c5632232f9")
 	)
 	(junction
-		(at 82.55 171.196)
+		(at 62.23 192.786)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "71918f77-38a1-4cf6-95b3-5b402fa365f6")
@@ -3038,7 +3300,7 @@
 		(uuid "cc6c2309-e2ec-4ec2-8212-47e50f902030")
 	)
 	(junction
-		(at 203.962 144.018)
+		(at 210.312 165.608)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cd62acd7-8c71-405f-97dd-13e52f7cd5e5")
@@ -3056,7 +3318,7 @@
 		(uuid "d66792aa-b349-4fc1-96af-4a55296fcc72")
 	)
 	(junction
-		(at 212.852 160.528)
+		(at 219.202 182.118)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e38fe79c-8d87-4015-a29b-a1687c00abec")
@@ -3101,7 +3363,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 176.784) (xy 169.672 177.038)
+			(xy 171.45 198.374) (xy 176.022 198.628)
 		)
 		(stroke
 			(width 0)
@@ -3121,7 +3383,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 173.736) (xy 82.55 171.196)
+			(xy 62.23 195.326) (xy 62.23 192.786)
 		)
 		(stroke
 			(width 0)
@@ -3131,7 +3393,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 171.196) (xy 73.66 171.196)
+			(xy 62.23 192.786) (xy 53.34 192.786)
 		)
 		(stroke
 			(width 0)
@@ -3181,7 +3443,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 171.196) (xy 73.66 172.466)
+			(xy 53.34 192.786) (xy 53.34 194.056)
 		)
 		(stroke
 			(width 0)
@@ -3201,7 +3463,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.426 173.736) (xy 107.95 173.736)
+			(xy 86.106 195.326) (xy 87.63 195.326)
 		)
 		(stroke
 			(width 0)
@@ -3221,7 +3483,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.962 202.438) (xy 203.962 203.708)
+			(xy 210.312 224.028) (xy 210.312 225.298)
 		)
 		(stroke
 			(width 0)
@@ -3231,7 +3493,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.962 154.178) (xy 203.962 155.448)
+			(xy 210.312 175.768) (xy 210.312 177.038)
 		)
 		(stroke
 			(width 0)
@@ -3291,7 +3553,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 161.798) (xy 61.214 161.798)
+			(xy 43.18 183.388) (xy 40.894 183.388)
 		)
 		(stroke
 			(width 0)
@@ -3341,7 +3603,7 @@
 	)
 	(wire
 		(pts
-			(xy 169.672 182.118) (xy 169.672 202.438)
+			(xy 176.022 203.708) (xy 176.022 224.028)
 		)
 		(stroke
 			(width 0)
@@ -3451,7 +3713,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.186 176.276) (xy 91.186 182.372)
+			(xy 70.866 197.866) (xy 70.866 203.962)
 		)
 		(stroke
 			(width 0)
@@ -3501,7 +3763,17 @@
 	)
 	(wire
 		(pts
-			(xy 203.962 165.608) (xy 203.962 168.148)
+			(xy 311.15 204.724) (xy 311.15 205.994)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37a4d736-7991-439c-bd77-ab0a802aec00")
+	)
+	(wire
+		(pts
+			(xy 210.312 187.198) (xy 210.312 189.738)
 		)
 		(stroke
 			(width 0)
@@ -3631,7 +3903,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 173.736) (xy 109.982 173.736)
+			(xy 87.63 195.326) (xy 89.662 195.326)
 		)
 		(stroke
 			(width 0)
@@ -3641,7 +3913,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.576 183.896) (xy 165.1 183.896)
+			(xy 169.926 205.486) (xy 171.45 205.486)
 		)
 		(stroke
 			(width 0)
@@ -3671,7 +3943,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.912 179.578) (xy 186.182 179.578)
+			(xy 191.262 201.168) (xy 192.532 201.168)
 		)
 		(stroke
 			(width 0)
@@ -3711,7 +3983,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 180.086) (xy 73.66 180.848)
+			(xy 53.34 201.676) (xy 53.34 202.438)
 		)
 		(stroke
 			(width 0)
@@ -3771,7 +4043,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.852 168.148) (xy 203.962 168.148)
+			(xy 219.202 189.738) (xy 210.312 189.738)
 		)
 		(stroke
 			(width 0)
@@ -3791,6 +4063,16 @@
 	)
 	(wire
 		(pts
+			(xy 309.372 191.262) (xy 309.372 193.167)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57def2fa-3ce8-486a-b9a1-08c8cccef039")
+	)
+	(wire
+		(pts
 			(xy 230.632 88.138) (xy 230.632 91.694)
 		)
 		(stroke
@@ -3801,7 +4083,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 161.798) (xy 73.66 161.798)
+			(xy 43.18 183.388) (xy 53.34 183.388)
 		)
 		(stroke
 			(width 0)
@@ -3821,7 +4103,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.962 141.478) (xy 203.962 144.018)
+			(xy 210.312 163.068) (xy 210.312 165.608)
 		)
 		(stroke
 			(width 0)
@@ -3871,7 +4153,7 @@
 	)
 	(wire
 		(pts
-			(xy 225.552 144.018) (xy 203.962 144.018)
+			(xy 231.902 165.608) (xy 210.312 165.608)
 		)
 		(stroke
 			(width 0)
@@ -3931,7 +4213,7 @@
 	)
 	(wire
 		(pts
-			(xy 225.552 146.558) (xy 225.552 144.018)
+			(xy 231.902 168.148) (xy 231.902 165.608)
 		)
 		(stroke
 			(width 0)
@@ -4021,7 +4303,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 170.434) (xy 73.66 171.196)
+			(xy 53.34 192.024) (xy 53.34 192.786)
 		)
 		(stroke
 			(width 0)
@@ -4101,7 +4383,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.962 144.018) (xy 203.962 146.558)
+			(xy 210.312 165.608) (xy 210.312 168.148)
 		)
 		(stroke
 			(width 0)
@@ -4121,7 +4403,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 162.814) (xy 73.66 161.798)
+			(xy 53.34 184.404) (xy 53.34 183.388)
 		)
 		(stroke
 			(width 0)
@@ -4211,7 +4493,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.962 168.148) (xy 203.962 174.498)
+			(xy 210.312 189.738) (xy 210.312 196.088)
 		)
 		(stroke
 			(width 0)
@@ -4291,7 +4573,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 176.784) (xy 165.1 183.896)
+			(xy 171.45 198.374) (xy 171.45 205.486)
 		)
 		(stroke
 			(width 0)
@@ -4331,7 +4613,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 157.988) (xy 63.5 161.798)
+			(xy 43.18 179.578) (xy 43.18 183.388)
 		)
 		(stroke
 			(width 0)
@@ -4351,13 +4633,23 @@
 	)
 	(wire
 		(pts
-			(xy 193.802 179.578) (xy 196.342 179.578)
+			(xy 200.152 201.168) (xy 202.692 201.168)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a6796b10-d3d9-41f4-8555-a8bf968eb24f")
+	)
+	(wire
+		(pts
+			(xy 311.15 205.994) (xy 315.976 205.994)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a700573b-7812-42f3-a377-51eaeb17b072")
 	)
 	(wire
 		(pts
@@ -4401,6 +4693,16 @@
 	)
 	(wire
 		(pts
+			(xy 319.532 190.627) (xy 319.532 193.167)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa483da5-e0e8-48ac-b559-46c4d91da030")
+	)
+	(wire
+		(pts
 			(xy 169.672 44.196) (xy 169.672 56.134)
 		)
 		(stroke
@@ -4421,7 +4723,7 @@
 	)
 	(wire
 		(pts
-			(xy 211.582 160.528) (xy 212.852 160.528)
+			(xy 217.932 182.118) (xy 219.202 182.118)
 		)
 		(stroke
 			(width 0)
@@ -4431,7 +4733,7 @@
 	)
 	(wire
 		(pts
-			(xy 169.672 202.438) (xy 203.962 202.438)
+			(xy 176.022 224.028) (xy 210.312 224.028)
 		)
 		(stroke
 			(width 0)
@@ -4451,7 +4753,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.954 176.784) (xy 159.766 176.784)
+			(xy 146.304 198.374) (xy 166.116 198.374)
 		)
 		(stroke
 			(width 0)
@@ -4501,7 +4803,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.852 160.528) (xy 217.932 160.528)
+			(xy 219.202 182.118) (xy 224.282 182.118)
 		)
 		(stroke
 			(width 0)
@@ -4541,17 +4843,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.138 218.948) (xy 88.138 219.964)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6e7d931-f62e-452a-b39e-d841be3b3214")
-	)
-	(wire
-		(pts
-			(xy 91.186 182.372) (xy 107.95 182.372)
+			(xy 70.866 203.962) (xy 87.63 203.962)
 		)
 		(stroke
 			(width 0)
@@ -4681,7 +4973,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.962 201.168) (xy 203.962 202.438)
+			(xy 210.312 222.758) (xy 210.312 224.028)
 		)
 		(stroke
 			(width 0)
@@ -4711,7 +5003,7 @@
 	)
 	(wire
 		(pts
-			(xy 225.552 154.178) (xy 225.552 155.448)
+			(xy 231.902 175.768) (xy 231.902 177.038)
 		)
 		(stroke
 			(width 0)
@@ -4731,7 +5023,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.852 160.528) (xy 212.852 168.148)
+			(xy 219.202 182.118) (xy 219.202 189.738)
 		)
 		(stroke
 			(width 0)
@@ -4751,7 +5043,7 @@
 	)
 	(wire
 		(pts
-			(xy 225.552 165.608) (xy 225.552 169.418)
+			(xy 231.902 187.198) (xy 231.902 191.008)
 		)
 		(stroke
 			(width 0)
@@ -4781,7 +5073,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.958 160.274) (xy 44.958 161.798)
+			(xy 24.638 181.864) (xy 24.638 183.388)
 		)
 		(stroke
 			(width 0)
@@ -4791,7 +5083,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.962 211.328) (xy 203.962 212.598)
+			(xy 210.312 232.918) (xy 210.312 234.188)
 		)
 		(stroke
 			(width 0)
@@ -4818,6 +5110,16 @@
 			(type default)
 		)
 		(uuid "d1454c42-4922-4190-b31c-a2321dbcea26")
+	)
+	(wire
+		(pts
+			(xy 88.138 218.44) (xy 88.138 219.964)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d22e5cef-429b-4cb2-a143-739cdd4ae1da")
 	)
 	(wire
 		(pts
@@ -4851,7 +5153,17 @@
 	)
 	(wire
 		(pts
-			(xy 91.186 171.196) (xy 82.55 171.196)
+			(xy 331.724 190.246) (xy 331.724 192.786)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d39a8787-fc8c-4dd7-928b-5ddb719acdc1")
+	)
+	(wire
+		(pts
+			(xy 70.866 192.786) (xy 62.23 192.786)
 		)
 		(stroke
 			(width 0)
@@ -4901,7 +5213,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.958 161.798) (xy 53.594 161.798)
+			(xy 24.638 183.388) (xy 33.274 183.388)
 		)
 		(stroke
 			(width 0)
@@ -4941,13 +5253,23 @@
 	)
 	(wire
 		(pts
-			(xy 159.766 176.784) (xy 159.766 180.086)
+			(xy 166.116 198.374) (xy 166.116 201.676)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e1fd1c8b-6b4c-43c7-83f4-169a9bd32398")
+	)
+	(wire
+		(pts
+			(xy 315.976 202.946) (xy 315.976 205.994)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e595bd3a-80e1-4380-98bc-f02e5b4eea26")
 	)
 	(wire
 		(pts
@@ -4981,7 +5303,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.962 184.658) (xy 203.962 193.548)
+			(xy 210.312 206.248) (xy 210.312 215.138)
 		)
 		(stroke
 			(width 0)
@@ -4991,7 +5313,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 178.816) (xy 82.55 180.848)
+			(xy 62.23 200.406) (xy 62.23 202.438)
 		)
 		(stroke
 			(width 0)
@@ -5001,7 +5323,7 @@
 	)
 	(wire
 		(pts
-			(xy 159.766 187.706) (xy 159.766 188.976)
+			(xy 166.116 209.296) (xy 166.116 210.566)
 		)
 		(stroke
 			(width 0)
@@ -5031,7 +5353,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 161.798) (xy 63.5 172.212)
+			(xy 43.18 183.388) (xy 43.18 193.802)
 		)
 		(stroke
 			(width 0)
@@ -5041,7 +5363,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 177.292) (xy 63.5 179.324)
+			(xy 43.18 198.882) (xy 43.18 200.914)
 		)
 		(stroke
 			(width 0)
@@ -5051,7 +5373,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 173.736) (xy 107.95 182.372)
+			(xy 87.63 195.326) (xy 87.63 203.962)
 		)
 		(stroke
 			(width 0)
@@ -5179,16 +5501,6 @@
 		)
 		(uuid "00f15ca7-582f-47f6-b97e-429d80e5c423")
 	)
-	(label "VA"
-		(at 88.138 218.948 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1e6da9c7-1fc9-4504-ba29-859a98554164")
-	)
 	(label "InGainIn"
 		(at 105.664 49.784 0)
 		(effects
@@ -5230,7 +5542,7 @@
 		(uuid "286acf92-66b4-4b71-ba45-ed0054982fd5")
 	)
 	(label "VB"
-		(at 109.982 173.736 0)
+		(at 89.662 195.326 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5250,7 +5562,7 @@
 		(uuid "2e6568f2-c1a2-40a8-b148-046ed85f5896")
 	)
 	(label "A"
-		(at 225.552 169.418 0)
+		(at 231.902 191.008 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5330,7 +5642,7 @@
 		(uuid "7533b576-1eb7-4389-a658-bd111e03981c")
 	)
 	(label "Vlfo"
-		(at 165.1 176.784 0)
+		(at 171.45 198.374 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5338,26 +5650,6 @@
 			(justify left bottom)
 		)
 		(uuid "944aade0-203b-4018-bc45-c5cf5480e41d")
-	)
-	(label "VA"
-		(at 64.77 218.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9511342a-d366-425e-ba29-8b57b14d1986")
-	)
-	(label "VA"
-		(at 33.274 219.202 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "999a5130-58ba-478a-b191-790b72c2d2ea")
 	)
 	(label "Stg4"
 		(at 280.162 104.648 0)
@@ -5389,16 +5681,6 @@
 		)
 		(uuid "c3fb2359-7d15-4da6-ba33-5a14198cee8f")
 	)
-	(label "VA"
-		(at 203.962 141.478 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c6ba82dc-dc85-4e89-aea3-6c51e0e1d375")
-	)
 	(label "VB"
 		(at 112.776 71.628 180)
 		(effects
@@ -5429,16 +5711,6 @@
 		)
 		(uuid "d6809a1b-c734-4e5f-9884-2ca8defe7038")
 	)
-	(label "VA"
-		(at 63.5 157.988 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d6fb1936-80d7-4a85-bf16-0fa5ccb96b7d")
-	)
 	(label "Stg1"
 		(at 213.36 56.134 0)
 		(effects
@@ -5461,7 +5733,7 @@
 	)
 	(global_label "DAC_OUT"
 		(shape input)
-		(at 139.954 176.784 180)
+		(at 146.304 198.374 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5471,7 +5743,7 @@
 		)
 		(uuid "26ca7b83-5a8e-498b-bf12-5e41222167be")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 128.744 176.784 0)
+			(at 135.094 198.374 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5480,6 +5752,78 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "FX_OUT"
+		(shape input)
+		(at 319.532 193.167 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "509bea0a-e7d7-42c2-8862-d979a7fa49e9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 329.4115 193.167 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "FX_IN"
+		(shape input)
+		(at 309.372 193.167 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "653192b7-2460-4df7-b3ad-fdeb4ae6752a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 317.5582 193.167 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "DAC_OUT"
+		(shape input)
+		(at 331.724 192.786 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9dd5d48a-20ba-499e-8292-3da2c01c2c6e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 342.934 192.786 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -5609,6 +5953,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "C8")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5689,6 +6039,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R7")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5765,6 +6121,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R20")
 					(unit 1)
 				)
@@ -5929,6 +6291,12 @@
 					(unit 3)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "U5")
+					(unit 3)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6009,6 +6377,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R24")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6084,6 +6458,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "#PWR011")
 					(unit 1)
 				)
@@ -6168,6 +6548,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "C10")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6244,6 +6630,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R12")
 					(unit 1)
 				)
@@ -6326,6 +6718,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R8")
 					(unit 1)
 				)
@@ -6467,11 +6865,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:Potentiometer")
-		(at 159.766 183.896 0)
+		(at 166.116 205.486 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -6482,7 +6886,7 @@
 		(dnp no)
 		(uuid "1f78c124-ffe1-4b19-8b59-553ffd47b053")
 		(property "Reference" "R11"
-			(at 156.972 184.5311 0)
+			(at 163.322 206.1211 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6493,7 +6897,7 @@
 			)
 		)
 		(property "Value" "Potentiometer"
-			(at 157.226 183.896 90)
+			(at 163.576 205.486 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6504,7 +6908,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 159.766 183.896 0)
+			(at 166.116 205.486 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6515,7 +6919,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 159.766 183.896 0)
+			(at 166.116 205.486 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6526,7 +6930,7 @@
 			)
 		)
 		(property "Description" "Potentiometer for Simulation"
-			(at 159.766 169.926 0)
+			(at 166.116 191.516 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6537,7 +6941,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 159.766 163.83 0)
+			(at 166.116 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6548,7 +6952,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
-			(at 159.766 165.608 0)
+			(at 166.116 187.198 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6559,7 +6963,7 @@
 			)
 		)
 		(property "Sim.Params" "r=100k pos=0.99"
-			(at 156.972 182.626 0)
+			(at 163.322 204.216 0)
 			(show_name yes)
 			(do_not_autoplace no)
 			(effects
@@ -6570,7 +6974,7 @@
 			)
 		)
 		(property "Sim.Type" "POT"
-			(at 159.766 183.896 0)
+			(at 166.116 205.486 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6592,6 +6996,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R11")
 					(unit 1)
 				)
@@ -6676,11 +7086,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R16")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TL074")
-		(at 98.806 173.736 0)
+		(at 78.486 195.326 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6691,7 +7107,7 @@
 		(fields_autoplaced yes)
 		(uuid "21dbdbc4-607f-455d-bb86-a21cdd950f24")
 		(property "Reference" "U5"
-			(at 98.806 164.084 0)
+			(at 78.486 185.674 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6701,7 +7117,7 @@
 			)
 		)
 		(property "Value" "TL074"
-			(at 98.806 166.624 0)
+			(at 78.486 188.214 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6711,7 +7127,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 97.536 171.196 0)
+			(at 77.216 192.786 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6722,7 +7138,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 100.076 168.656 0)
+			(at 79.756 190.246 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6733,7 +7149,7 @@
 			)
 		)
 		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 98.806 173.736 0)
+			(at 78.486 195.326 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6744,7 +7160,7 @@
 			)
 		)
 		(property "Sim.Library" "tl074-quad.lib"
-			(at 98.806 173.736 0)
+			(at 78.486 195.326 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6755,7 +7171,7 @@
 			)
 		)
 		(property "Sim.Name" "TL074c"
-			(at 98.806 173.736 0)
+			(at 78.486 195.326 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6766,7 +7182,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 98.806 173.736 0)
+			(at 78.486 195.326 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6777,7 +7193,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=9 10=10 11=11 12=12 13=13 14=14"
-			(at 98.806 173.736 0)
+			(at 78.486 195.326 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6832,6 +7248,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "U5")
 					(unit 1)
 				)
@@ -7002,6 +7424,12 @@
 					(unit 3)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "U3")
+					(unit 3)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7081,11 +7509,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 57.404 161.798 90)
+		(at 37.084 183.388 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7096,7 +7530,7 @@
 		(fields_autoplaced yes)
 		(uuid "257564bc-eff4-41fe-ae82-6f6a8e692e21")
 		(property "Reference" "R1"
-			(at 57.404 156.464 90)
+			(at 37.084 178.054 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7106,7 +7540,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 57.404 159.004 90)
+			(at 37.084 180.594 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7116,7 +7550,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.658 160.782 90)
+			(at 37.338 182.372 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7127,7 +7561,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.404 161.798 0)
+			(at 37.084 183.388 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7138,7 +7572,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 57.404 161.798 0)
+			(at 37.084 183.388 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7157,6 +7591,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R1")
 					(unit 1)
 				)
@@ -7236,6 +7676,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "#PWR017")
 					(unit 1)
 				)
@@ -7321,6 +7767,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R10")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7401,11 +7853,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "C13")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 73.66 176.276 180)
+		(at 53.34 197.866 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7416,7 +7874,7 @@
 		(fields_autoplaced yes)
 		(uuid "2cbb37e8-7c9f-45f7-ac68-87a546655681")
 		(property "Reference" "R3"
-			(at 75.692 175.0059 0)
+			(at 55.372 196.5959 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7427,7 +7885,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 75.692 177.5459 0)
+			(at 55.372 199.1359 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7438,7 +7896,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.644 176.022 90)
+			(at 52.324 197.612 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7449,7 +7907,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 176.276 0)
+			(at 53.34 197.866 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7460,7 +7918,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 73.66 176.276 0)
+			(at 53.34 197.866 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7479,6 +7937,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R3")
 					(unit 1)
 				)
@@ -7563,6 +8027,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "C3")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7639,6 +8109,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R31")
 					(unit 1)
 				)
@@ -7725,11 +8201,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R27")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 179.324 0)
+		(at 43.18 200.914 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7740,7 +8222,7 @@
 		(fields_autoplaced yes)
 		(uuid "34ac26c5-3dca-40d7-8140-9eb59f11e852")
 		(property "Reference" "#PWR018"
-			(at 63.5 185.674 0)
+			(at 43.18 207.264 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7751,7 +8233,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 183.134 0)
+			(at 43.18 204.724 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7762,7 +8244,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 179.324 0)
+			(at 43.18 200.914 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7773,7 +8255,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 179.324 0)
+			(at 43.18 200.914 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7784,7 +8266,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 179.324 0)
+			(at 43.18 200.914 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7800,6 +8282,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "#PWR018")
 					(unit 1)
 				)
@@ -7881,6 +8369,181 @@
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 309.372 191.262 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ac8704f-b592-409c-b7b8-bd84b7a7511c")
+		(property "Reference" "TP2"
+			(at 311.404 186.6899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "In"
+			(at 311.404 189.2299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm_VAL"
+			(at 314.452 191.262 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 314.452 191.262 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 309.372 191.262 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8d67c06a-a4a1-4b6a-a485-f0faa7c4aa44")
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12VA")
+		(at 210.312 163.068 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f69de8d-e8b0-459a-807c-0cf70c6b4465")
+		(property "Reference" "#PWR026"
+			(at 210.312 166.878 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12VA"
+			(at 210.312 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.312 163.068 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.312 163.068 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12VA\""
+			(at 210.312 163.068 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0bf650a5-7710-44c1-a20b-3c9d7045f154")
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -8050,11 +8713,17 @@
 					(unit 2)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "U2")
+					(unit 2)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small_US")
-		(at 63.5 174.752 0)
+		(at 43.18 196.342 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8065,7 +8734,7 @@
 		(fields_autoplaced yes)
 		(uuid "45729c11-612c-49c0-a178-9970baefc585")
 		(property "Reference" "C12"
-			(at 66.04 173.0501 0)
+			(at 45.72 194.6401 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8076,7 +8745,7 @@
 			)
 		)
 		(property "Value" "220u"
-			(at 66.04 175.5901 0)
+			(at 45.72 197.1801 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8087,7 +8756,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 174.752 0)
+			(at 43.18 196.342 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8098,7 +8767,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 174.752 0)
+			(at 43.18 196.342 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8109,7 +8778,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small US symbol"
-			(at 63.5 174.752 0)
+			(at 43.18 196.342 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8132,11 +8801,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "C12")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 159.766 188.976 0)
+		(at 166.116 210.566 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8147,7 +8822,7 @@
 		(fields_autoplaced yes)
 		(uuid "46cef2a2-c8f6-453e-b8ca-8af0b584142c")
 		(property "Reference" "#PWR024"
-			(at 159.766 195.326 0)
+			(at 166.116 216.916 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8158,7 +8833,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 159.766 192.786 0)
+			(at 166.116 214.376 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8169,7 +8844,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 159.766 188.976 0)
+			(at 166.116 210.566 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8180,7 +8855,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 159.766 188.976 0)
+			(at 166.116 210.566 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8191,7 +8866,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 159.766 188.976 0)
+			(at 166.116 210.566 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8208,6 +8883,97 @@
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 315.976 202.946 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4721971b-61cd-4227-a4db-307913321f68")
+		(property "Reference" "TP6"
+			(at 317.754 198.3739 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "12VA"
+			(at 317.754 200.9139 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm_VAL"
+			(at 321.056 202.946 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 321.056 202.946 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 315.976 202.946 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f3ae3180-07ab-4d84-9a45-4e2b0e2a23e0")
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -8293,6 +9059,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "C15")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8369,6 +9141,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "C9")
 					(unit 1)
 				)
@@ -8455,6 +9233,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R32")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8530,6 +9314,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "#PWR013")
 					(unit 1)
 				)
@@ -8610,6 +9400,96 @@
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12VA")
+		(at 64.77 218.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52e7b417-2111-413a-b6e4-6b933ed2e25e")
+		(property "Reference" "#PWR028"
+			(at 64.77 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12VA"
+			(at 64.77 214.122 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12VA\""
+			(at 64.77 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3757ff67-b46b-4f6f-af96-ffb10b35a0e4")
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -8695,11 +9575,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R19")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 203.962 207.518 180)
+		(lib_id "power:+12VA")
+		(at 311.15 204.724 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8708,31 +9594,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5ecb4743-d790-4ded-98fc-d18b2985775c")
-		(property "Reference" "R38"
-			(at 206.502 206.2479 0)
+		(uuid "559ab15e-8fb3-4d24-9432-f89d8ce1b635")
+		(property "Reference" "#PWR030"
+			(at 311.15 208.534 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "3k3"
-			(at 206.502 208.7879 0)
+		(property "Value" "+12VA"
+			(at 311.15 200.406 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 202.946 207.264 90)
+			(at 311.15 204.724 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8743,7 +9628,177 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.962 207.518 0)
+			(at 311.15 204.724 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12VA\""
+			(at 311.15 204.724 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5858caec-2e1d-4d70-a804-2bffe3b12db9")
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 331.724 190.246 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5df499a6-386e-4861-8cb4-0284ee57e7ec")
+		(property "Reference" "TP5"
+			(at 334.01 185.6739 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DAC"
+			(at 334.01 188.2139 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm_VAL"
+			(at 336.804 190.246 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 336.804 190.246 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 331.724 190.246 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df698cfe-1e6a-468b-ace1-3eaf62c02beb")
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 210.312 229.108 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ecb4743-d790-4ded-98fc-d18b2985775c")
+		(property "Reference" "R38"
+			(at 212.852 227.8379 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "3k3"
+			(at 212.852 230.3779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.296 228.854 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.312 229.108 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8754,7 +9809,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 203.962 207.518 0)
+			(at 210.312 229.108 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8777,11 +9832,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R38")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:PNP")
-		(at 223.012 160.528 0)
+		(at 229.362 182.118 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -8792,7 +9853,7 @@
 		(dnp no)
 		(uuid "5f219818-7c46-48b7-850e-5df2db8f4dcd")
 		(property "Reference" "Q6"
-			(at 228.6 159.2579 0)
+			(at 234.95 180.8479 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8803,7 +9864,7 @@
 			)
 		)
 		(property "Value" "BC857"
-			(at 228.6 161.7979 0)
+			(at 234.95 183.3879 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8814,7 +9875,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 258.572 160.528 0)
+			(at 264.922 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8825,7 +9886,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 258.572 160.528 0)
+			(at 264.922 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8836,7 +9897,7 @@
 			)
 		)
 		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
-			(at 223.012 160.528 0)
+			(at 229.362 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8847,7 +9908,7 @@
 			)
 		)
 		(property "Sim.Device" "PNP"
-			(at 223.012 160.528 0)
+			(at 229.362 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8858,7 +9919,7 @@
 			)
 		)
 		(property "Sim.Type" "GUMMELPOON"
-			(at 223.012 160.528 0)
+			(at 229.362 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8869,7 +9930,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 223.012 160.528 0)
+			(at 229.362 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8880,7 +9941,7 @@
 			)
 		)
 		(property "Sim.Library" "bc8x7b.lib"
-			(at 223.012 160.528 0)
+			(at 229.362 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8891,7 +9952,7 @@
 			)
 		)
 		(property "Sim.Name" "BC857B"
-			(at 223.012 160.528 0)
+			(at 229.362 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8917,11 +9978,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "Q6")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 44.958 160.274 0)
+		(at 24.638 181.864 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8932,7 +9999,7 @@
 		(fields_autoplaced yes)
 		(uuid "694f8b67-b9d7-46e3-a6da-8ee226296a06")
 		(property "Reference" "#PWR06"
-			(at 44.958 164.084 0)
+			(at 24.638 185.674 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8943,7 +10010,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 44.958 154.94 0)
+			(at 24.638 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8953,7 +10020,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.958 160.274 0)
+			(at 24.638 181.864 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8964,7 +10031,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.958 160.274 0)
+			(at 24.638 181.864 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8975,7 +10042,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 44.958 160.274 0)
+			(at 24.638 181.864 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8991,6 +10058,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "#PWR06")
 					(unit 1)
 				)
@@ -9077,6 +10150,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R17")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9157,11 +10236,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R6")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:NPN")
-		(at 201.422 179.578 0)
+		(at 207.772 201.168 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9172,7 +10257,7 @@
 		(fields_autoplaced yes)
 		(uuid "70409c73-a08f-41e7-b37f-d4bd3118bdda")
 		(property "Reference" "Q4"
-			(at 206.756 178.3079 0)
+			(at 213.106 199.8979 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9183,7 +10268,7 @@
 			)
 		)
 		(property "Value" "BC847"
-			(at 206.756 180.8479 0)
+			(at 213.106 202.4379 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9194,7 +10279,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.922 179.578 0)
+			(at 271.272 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9205,7 +10290,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 264.922 179.578 0)
+			(at 271.272 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9216,7 +10301,7 @@
 			)
 		)
 		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
-			(at 201.422 179.578 0)
+			(at 207.772 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9227,7 +10312,7 @@
 			)
 		)
 		(property "Sim.Device" "NPN"
-			(at 201.422 179.578 0)
+			(at 207.772 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9238,7 +10323,7 @@
 			)
 		)
 		(property "Sim.Type" "GUMMELPOON"
-			(at 201.422 179.578 0)
+			(at 207.772 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9249,7 +10334,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 201.422 179.578 0)
+			(at 207.772 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9260,7 +10345,7 @@
 			)
 		)
 		(property "Sim.Library" "bc8x7b.lib"
-			(at 201.422 179.578 0)
+			(at 207.772 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9271,7 +10356,7 @@
 			)
 		)
 		(property "Sim.Name" "BC847B"
-			(at 201.422 179.578 0)
+			(at 207.772 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9293,6 +10378,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "Q4")
 					(unit 1)
 				)
@@ -9459,6 +10550,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "U2")
 					(unit 1)
 				)
@@ -9631,6 +10728,12 @@
 					(unit 5)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "U3")
+					(unit 5)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9711,11 +10814,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R18")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 203.962 212.598 0)
+		(at 210.312 234.188 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9726,7 +10835,7 @@
 		(fields_autoplaced yes)
 		(uuid "770445b6-49c9-4e39-9b83-830c4a66c483")
 		(property "Reference" "#PWR022"
-			(at 203.962 218.948 0)
+			(at 210.312 240.538 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9737,7 +10846,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.962 216.408 0)
+			(at 210.312 237.998 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9748,7 +10857,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.962 212.598 0)
+			(at 210.312 234.188 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9759,7 +10868,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.962 212.598 0)
+			(at 210.312 234.188 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9770,7 +10879,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.962 212.598 0)
+			(at 210.312 234.188 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9786,6 +10895,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "#PWR022")
 					(unit 1)
 				)
@@ -9870,11 +10985,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R26")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 203.962 197.358 180)
+		(at 210.312 218.948 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9885,7 +11006,7 @@
 		(fields_autoplaced yes)
 		(uuid "79fa41d2-c4ad-421c-b6e5-2ead0e6e4088")
 		(property "Reference" "R42"
-			(at 206.502 196.0879 0)
+			(at 212.852 217.6779 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9896,7 +11017,7 @@
 			)
 		)
 		(property "Value" "2k2"
-			(at 206.502 198.6279 0)
+			(at 212.852 220.2179 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9907,7 +11028,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 202.946 197.104 90)
+			(at 209.296 218.694 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9918,7 +11039,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.962 197.358 0)
+			(at 210.312 218.948 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9929,7 +11050,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 203.962 197.358 0)
+			(at 210.312 218.948 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9948,6 +11069,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R42")
 					(unit 1)
 				)
@@ -10032,11 +11159,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "C5")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 73.66 166.624 180)
+		(at 53.34 188.214 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10047,7 +11180,7 @@
 		(fields_autoplaced yes)
 		(uuid "7cdc3ff1-2c88-4b97-9228-b56b13e4380f")
 		(property "Reference" "R2"
-			(at 75.692 165.3539 0)
+			(at 55.372 186.9439 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10058,7 +11191,7 @@
 			)
 		)
 		(property "Value" "15k"
-			(at 75.692 167.8939 0)
+			(at 55.372 189.4839 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10069,7 +11202,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.644 166.37 90)
+			(at 52.324 187.96 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10080,7 +11213,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 166.624 0)
+			(at 53.34 188.214 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10091,7 +11224,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 73.66 166.624 0)
+			(at 53.34 188.214 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10110,6 +11243,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R2")
 					(unit 1)
 				)
@@ -10280,6 +11419,12 @@
 					(unit 4)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "U2")
+					(unit 4)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10356,6 +11501,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "C11")
 					(unit 1)
 				)
@@ -10442,6 +11593,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R15")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10517,6 +11674,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "#PWR015")
 					(unit 1)
 				)
@@ -10600,6 +11763,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10675,6 +11844,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "#PWR014")
 					(unit 1)
 				)
@@ -10845,6 +12020,12 @@
 					(unit 4)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "U3")
+					(unit 4)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10921,6 +12102,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R9")
 					(unit 1)
 				)
@@ -11007,11 +12194,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R21")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 189.992 179.578 90)
+		(at 196.342 201.168 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11022,7 +12215,7 @@
 		(fields_autoplaced yes)
 		(uuid "9b707603-35fc-413b-a4fa-725c6d59e885")
 		(property "Reference" "R39"
-			(at 189.992 174.244 90)
+			(at 196.342 195.834 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11032,7 +12225,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 189.992 176.784 90)
+			(at 196.342 198.374 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11042,7 +12235,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.246 178.562 90)
+			(at 196.596 200.152 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11053,7 +12246,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.992 179.578 0)
+			(at 196.342 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11064,7 +12257,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 189.992 179.578 0)
+			(at 196.342 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11083,6 +12276,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R39")
 					(unit 1)
 				)
@@ -11167,11 +12366,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R22")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:PNP")
-		(at 206.502 160.528 180)
+		(at 212.852 182.118 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11181,7 +12386,7 @@
 		(dnp no)
 		(uuid "9f03060c-4286-4fbf-b179-f6f2dc580576")
 		(property "Reference" "Q5"
-			(at 200.914 159.2579 0)
+			(at 207.264 180.8479 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11192,7 +12397,7 @@
 			)
 		)
 		(property "Value" "BC857"
-			(at 200.914 161.7979 0)
+			(at 207.264 183.3879 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11203,7 +12408,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 170.942 160.528 0)
+			(at 177.292 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11214,7 +12419,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 170.942 160.528 0)
+			(at 177.292 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11225,7 +12430,7 @@
 			)
 		)
 		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
-			(at 206.502 160.528 0)
+			(at 212.852 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11236,7 +12441,7 @@
 			)
 		)
 		(property "Sim.Device" "PNP"
-			(at 206.502 160.528 0)
+			(at 212.852 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11247,7 +12452,7 @@
 			)
 		)
 		(property "Sim.Type" "GUMMELPOON"
-			(at 206.502 160.528 0)
+			(at 212.852 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11258,7 +12463,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 206.502 160.528 0)
+			(at 212.852 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11269,7 +12474,7 @@
 			)
 		)
 		(property "Sim.Library" "bc8x7b.lib"
-			(at 206.502 160.528 0)
+			(at 212.852 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11280,7 +12485,7 @@
 			)
 		)
 		(property "Sim.Name" "BC857B"
-			(at 206.502 160.528 0)
+			(at 212.852 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11306,11 +12511,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 203.962 150.368 180)
+		(at 210.312 171.958 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11321,7 +12532,7 @@
 		(fields_autoplaced yes)
 		(uuid "a2ef92fb-0707-4977-a8f1-194517529af9")
 		(property "Reference" "R40"
-			(at 206.756 149.0979 0)
+			(at 213.106 170.6879 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11332,7 +12543,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 206.756 151.6379 0)
+			(at 213.106 173.2279 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11343,7 +12554,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 202.946 150.114 90)
+			(at 209.296 171.704 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11354,7 +12565,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.962 150.368 0)
+			(at 210.312 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11365,7 +12576,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 203.962 150.368 0)
+			(at 210.312 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11384,6 +12595,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R40")
 					(unit 1)
 				)
@@ -11556,6 +12773,12 @@
 					(unit 5)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "U2")
+					(unit 5)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11634,6 +12857,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R23")
 					(unit 1)
 				)
@@ -11720,6 +12949,96 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12VA")
+		(at 88.138 218.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8088759-a1a7-4236-84ee-c19c1bf81807")
+		(property "Reference" "#PWR029"
+			(at 88.138 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12VA"
+			(at 88.138 214.122 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.138 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.138 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12VA\""
+			(at 88.138 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "58f70648-4445-4b3c-ad7e-9e100845c00b")
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11798,6 +13117,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "C14")
 					(unit 1)
 				)
@@ -11884,6 +13209,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R33")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11960,6 +13291,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "C7")
 					(unit 1)
 				)
@@ -12043,6 +13380,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12119,6 +13462,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R34")
 					(unit 1)
 				)
@@ -12205,11 +13554,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "C16")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 180.848 0)
+		(at 53.34 202.438 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12220,7 +13575,7 @@
 		(fields_autoplaced yes)
 		(uuid "be36dc6d-5260-4d56-af2c-d05afe61a4cf")
 		(property "Reference" "#PWR07"
-			(at 73.66 187.198 0)
+			(at 53.34 208.788 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12231,7 +13586,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.66 184.658 0)
+			(at 53.34 206.248 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12242,7 +13597,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 180.848 0)
+			(at 53.34 202.438 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12253,7 +13608,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 180.848 0)
+			(at 53.34 202.438 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12264,7 +13619,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 180.848 0)
+			(at 53.34 202.438 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12280,6 +13635,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "#PWR07")
 					(unit 1)
 				)
@@ -12450,6 +13811,12 @@
 					(unit 3)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "U2")
+					(unit 3)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12525,6 +13892,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "#PWR023")
 					(unit 1)
 				)
@@ -12608,6 +13981,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12687,11 +14066,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 225.552 150.368 180)
+		(at 231.902 171.958 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12702,7 +14087,7 @@
 		(fields_autoplaced yes)
 		(uuid "c45583e1-66f9-4c9a-800e-3fb40404f5fe")
 		(property "Reference" "R41"
-			(at 228.346 149.0979 0)
+			(at 234.696 170.6879 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12713,7 +14098,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 228.346 151.6379 0)
+			(at 234.696 173.2279 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12724,7 +14109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 224.536 150.114 90)
+			(at 230.886 171.704 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12735,7 +14120,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 225.552 150.368 0)
+			(at 231.902 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12746,7 +14131,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 225.552 150.368 0)
+			(at 231.902 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12769,11 +14154,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R41")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 82.55 180.848 0)
+		(at 62.23 202.438 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12784,7 +14175,7 @@
 		(fields_autoplaced yes)
 		(uuid "c4bc6565-6d5d-43f0-88e3-1a407e617978")
 		(property "Reference" "#PWR09"
-			(at 82.55 187.198 0)
+			(at 62.23 208.788 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12795,7 +14186,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 82.55 184.658 0)
+			(at 62.23 206.248 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12806,7 +14197,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 180.848 0)
+			(at 62.23 202.438 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12817,7 +14208,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 180.848 0)
+			(at 62.23 202.438 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12828,7 +14219,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 82.55 180.848 0)
+			(at 62.23 202.438 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12848,11 +14239,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TL074")
-		(at 177.292 179.578 0)
+		(at 183.642 201.168 0)
 		(unit 4)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12862,7 +14259,7 @@
 		(dnp no)
 		(uuid "c90e85e8-640f-42a5-9d19-7f6b492617f7")
 		(property "Reference" "U5"
-			(at 177.292 189.992 0)
+			(at 183.642 211.582 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12872,7 +14269,7 @@
 			)
 		)
 		(property "Value" "TL074"
-			(at 177.292 187.452 0)
+			(at 183.642 209.042 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12882,7 +14279,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 176.022 177.038 0)
+			(at 182.372 198.628 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12893,7 +14290,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 178.562 174.498 0)
+			(at 184.912 196.088 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12904,7 +14301,7 @@
 			)
 		)
 		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 177.292 179.578 0)
+			(at 183.642 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12915,7 +14312,7 @@
 			)
 		)
 		(property "Sim.Library" "tl074-quad.lib"
-			(at 177.292 179.578 0)
+			(at 183.642 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12926,7 +14323,7 @@
 			)
 		)
 		(property "Sim.Name" "TL074c"
-			(at 177.292 179.578 0)
+			(at 183.642 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12937,7 +14334,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 177.292 179.578 0)
+			(at 183.642 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12948,7 +14345,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=9 10=10 11=11 12=12 13=13 14=14"
-			(at 177.292 179.578 0)
+			(at 183.642 201.168 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13005,6 +14402,181 @@
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
 					(reference "U5")
 					(unit 4)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "U5")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12VA")
+		(at 43.18 179.578 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb77d62d-ed96-4f48-a583-0d566f848643")
+		(property "Reference" "#PWR025"
+			(at 43.18 183.388 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12VA"
+			(at 43.18 175.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 179.578 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 179.578 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12VA\""
+			(at 43.18 179.578 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9c80c6b9-2a80-473a-b7e7-ad6da6b638a2")
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 319.532 190.627 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cbd77ac9-45d2-4e1f-b3db-8cb2fbf7b3be")
+		(property "Reference" "TP4"
+			(at 321.056 186.0549 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Out"
+			(at 321.056 188.5949 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm_VAL"
+			(at 324.612 190.627 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 324.612 190.627 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 319.532 190.627 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8b88301e-71bd-4c1e-9f28-766583fd0fa3")
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "TP4")
+					(unit 1)
 				)
 			)
 		)
@@ -13169,6 +14741,12 @@
 					(unit 5)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "U5")
+					(unit 5)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13247,6 +14825,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R28")
 					(unit 1)
 				)
@@ -13417,6 +15001,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "U3")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13583,6 +15173,96 @@
 					(unit 2)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "U3")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12VA")
+		(at 33.274 219.202 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4c98354-a944-4e1b-aa88-d809f006bf38")
+		(property "Reference" "#PWR027"
+			(at 33.274 223.012 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12VA"
+			(at 33.274 214.884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.274 219.202 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.274 219.202 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12VA\""
+			(at 33.274 219.202 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b08c760e-43e5-42e0-9958-aef9cb965b74")
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13659,6 +15339,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R13")
 					(unit 1)
 				)
@@ -13823,6 +15509,12 @@
 					(unit 2)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "U5")
+					(unit 2)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13899,6 +15591,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R29")
 					(unit 1)
 				)
@@ -13983,6 +15681,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R30")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14062,11 +15766,17 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small_US")
-		(at 82.55 176.276 0)
+		(at 62.23 197.866 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14077,7 +15787,7 @@
 		(fields_autoplaced yes)
 		(uuid "f30c1a08-5fed-443f-b417-86f87d397025")
 		(property "Reference" "C2"
-			(at 85.852 174.5741 0)
+			(at 65.532 196.1641 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14088,7 +15798,7 @@
 			)
 		)
 		(property "Value" "47u"
-			(at 85.852 177.1141 0)
+			(at 65.532 198.7041 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14099,7 +15809,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 176.276 0)
+			(at 62.23 197.866 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14110,7 +15820,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 176.276 0)
+			(at 62.23 197.866 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14121,7 +15831,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small US symbol"
-			(at 82.55 176.276 0)
+			(at 62.23 197.866 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14140,6 +15850,12 @@
 		(instances
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "C2")
 					(unit 1)
 				)
@@ -14226,6 +15942,12 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R5")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14308,6 +16030,18 @@
 					(unit 1)
 				)
 			)
+			(project "Analog"
+				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
+					(reference "R14")
+					(unit 1)
+				)
+			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
