@@ -1571,6 +1571,235 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Potentiometer_US"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer_US"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Potentiometer, US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "resistor variable"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_US_0_1"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -2918,6 +3147,16 @@
 		)
 		(uuid "72e5af32-3653-48fb-a794-2e5c7bef8dda")
 	)
+	(text "Depth control"
+		(exclude_from_sim no)
+		(at 172.72 190.754 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7462ab83-e8e4-4617-9c08-e482943c9d06")
+	)
 	(text "Power & bias"
 		(exclude_from_sim no)
 		(at 14.478 155.448 0)
@@ -3757,6 +3996,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.878 194.564) (xy 166.878 197.358)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44eeaedd-e5bc-4729-b8d9-9374e554bba4")
+	)
+	(wire
+		(pts
 			(xy 239.776 104.14) (xy 239.776 100.33)
 		)
 		(stroke
@@ -4134,6 +4383,16 @@
 			(type default)
 		)
 		(uuid "6ac0dd5e-b56b-4465-a352-42efb04a0948")
+	)
+	(wire
+		(pts
+			(xy 270.51 203.454) (xy 270.51 205.359)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b7a069e-2fa4-44b6-9627-4bad70795d9c")
 	)
 	(wire
 		(pts
@@ -4597,7 +4856,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.242 201.168) (xy 178.054 201.168)
+			(xy 170.688 201.168) (xy 178.054 201.168)
 		)
 		(stroke
 			(width 0)
@@ -4614,6 +4873,16 @@
 			(type default)
 		)
 		(uuid "af2fce24-464b-4140-8481-aa474347f188")
+	)
+	(wire
+		(pts
+			(xy 166.878 204.978) (xy 166.878 206.248)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afa29b56-49ce-460f-b92d-f4ac0eb39b44")
 	)
 	(wire
 		(pts
@@ -5177,6 +5446,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.544 194.564) (xy 166.878 194.564)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1cba9cb-f582-4995-8394-1ef447413e7f")
+	)
+	(wire
+		(pts
 			(xy 259.842 86.36) (xy 259.588 22.606)
 		)
 		(stroke
@@ -5507,7 +5786,7 @@
 	)
 	(global_label "DAC_OUT"
 		(shape input)
-		(at 158.242 201.168 180)
+		(at 161.544 194.564 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5517,7 +5796,7 @@
 		)
 		(uuid "26ca7b83-5a8e-498b-bf12-5e41222167be")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.032 201.168 0)
+			(at 150.334 194.564 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5542,6 +5821,30 @@
 		(uuid "509bea0a-e7d7-42c2-8862-d979a7fa49e9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 289.0255 183.515 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "DAC_OUT"
+		(shape input)
+		(at 270.51 205.359 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5730efb4-1ee3-454b-88e8-9d1aa89aa47b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 281.72 205.359 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6129,6 +6432,135 @@
 			(project "Analog"
 				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer_US")
+		(at 166.878 201.168 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0ba920a4-4ad7-41b4-9951-9a0512261bfc")
+		(property "Reference" "RV3"
+			(at 165.1 202.4381 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10kB"
+			(at 165.1 199.8981 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RV16AF_42_Single_Long"
+			(at 166.878 201.168 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.878 201.168 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Potentiometer, US symbol"
+			(at 166.878 201.168 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RV9022NO-PA30B7.0-B10K-000-W3.0"
+			(at 166.878 201.168 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase Link" "https://www.taydaelectronics.com/potentiometer-variable-resistors/rotary-potentiometer/linear/tayda-10k-ohm-linear-taper-potentiometer-spline-shaft-pcb-mount.html"
+			(at 166.878 201.168 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 166.878 201.168 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 166.878 201.168 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "359fd3a4-2b6c-4efa-87a5-d311cf2b5661")
+		)
+		(pin "2"
+			(uuid "1686ae54-5077-4094-be60-95bfee69a8b6")
+		)
+		(pin "3"
+			(uuid "036131a8-129c-467f-8779-4520889c1149")
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "RV3")
 					(unit 1)
 				)
 			)
@@ -8849,6 +9281,85 @@
 			(project "Analog"
 				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 270.51 203.454 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e8a11ff-06f5-4a9b-a419-ec4cfb87dfd7")
+		(property "Reference" "TP3"
+			(at 273.05 198.8819 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DAC"
+			(at 273.05 201.4219 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm_VAL"
+			(at 275.59 203.454 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 275.59 203.454 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 270.51 203.454 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "52bc5a71-ae14-4561-9357-466aa96b1ff6")
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -14507,6 +15018,85 @@
 				(path "/39575410-e3cd-47ef-bae5-8575bfea1bc2"
 					(reference "U3")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 166.878 206.248 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2c739ca-d371-43ad-92aa-ed72fd8d933b")
+		(property "Reference" "#PWR024"
+			(at 166.878 212.598 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 166.878 210.058 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.878 206.248 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.878 206.248 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 166.878 206.248 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0c8441a2-44aa-47d9-b584-10775bd49952")
+		)
+		(instances
+			(project "PhaserPedalBoard"
+				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/eeafeccd-f74a-4a10-9f05-704884f9b4d0"
+					(reference "#PWR024")
+					(unit 1)
 				)
 			)
 		)

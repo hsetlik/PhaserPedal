@@ -14,6 +14,7 @@ PhaserPedalBoard*/*.zip
 PhaserPedalBoard*/*.lck
 */.history
 *.history
+*.history_old
 *-backups
 *cmake
 *.mxproject
