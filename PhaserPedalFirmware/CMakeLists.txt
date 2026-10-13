@@ -40,11 +40,15 @@ add_subdirectory(cmake/stm32cubemx)
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined library search paths
+    ${CMAKE_CURRENT_LIST_DIR}/Core/Inc
 )
 
+set(SRC_DIR ${CMAKE_CURRENT_LIST_DIR}/Core/Src)
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
+    ${SRC_DIR}/lfo.c
+
 )
 
 # Add include paths

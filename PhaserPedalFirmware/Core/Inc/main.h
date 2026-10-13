@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdbool.h>
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -46,7 +46,9 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-
+#define SAMPLE_RATE 48000
+#define TAP_SAMPLE_RATE 8000
+#define DMA_BUF_SIZE 256
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
@@ -61,6 +63,12 @@ void Error_Handler(void);
 #define SPEED_IN_GPIO_Port GPIOA
 #define SHAPE_IN_Pin GPIO_PIN_2
 #define SHAPE_IN_GPIO_Port GPIOA
+#define BYPASS_IN_Pin GPIO_PIN_8
+#define BYPASS_IN_GPIO_Port GPIOA
+#define TAP_IN_Pin GPIO_PIN_9
+#define TAP_IN_GPIO_Port GPIOA
+#define BYP_LED_Pin GPIO_PIN_15
+#define BYP_LED_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 
