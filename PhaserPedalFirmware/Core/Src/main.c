@@ -19,7 +19,9 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "lfo.h"
+#include "stm32l0xx_hal_gpio.h"
 #include "stm32l0xx_hal_tim.h"
+#include "tap_tempo.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -58,6 +60,10 @@ uint16_t* const dmaPtrB = &dmaBuf[DMA_BUF_SIZE];
 volatile bool bufferReady = false;
 uint16_t* nextBuffer = dmaPtrA;
 lfo_state lfo;
+// global time stuff
+static const float secsIncrement = 1.0f / (float)TAP_SAMPLE_RATE;
+static float globalSeconds = 0.0f;
+
 
 /* USER CODE END PV */
 
@@ -132,6 +138,8 @@ int main(void)
   }
   // initialize the LFO
   lfo_init_state(&lfo);
+  //initialize the tap tempo
+  tap_tempo_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -433,6 +441,7 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 //=====================================================================================
+// DAC callbacks------------------------------------------
 void HAL_DAC_ConvHalfCpltCallbackCh1(DAC_HandleTypeDef *){
   nextBuffer = dmaPtrA;
   bufferReady = true;
@@ -440,6 +449,17 @@ void HAL_DAC_ConvHalfCpltCallbackCh1(DAC_HandleTypeDef *){
 void HAL_DAC_ConvCpltCallbackCh1(DAC_HandleTypeDef *){
   nextBuffer = dmaPtrB;
   bufferReady = true;
+}
+
+float get_global_time(){
+  return globalSeconds;
+}
+// Timer callbacks----------------------------------------
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+  if(htim == &htim6){
+    tap_tempo_update((bool)HAL_GPIO_ReadPin(TAP_IN_GPIO_Port, TAP_IN_Pin));
+    globalSeconds += secsIncrement;
+  }
 }
 //=====================================================================================
 
