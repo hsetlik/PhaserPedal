@@ -5,7 +5,7 @@
     {
       "analysis": "TRAN",
       "commands": [
-        ".tran 10u 2 0 20u",
+        ".tran 1u 30m 0 20u",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -22,13 +22,13 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(55, 126, 184)",
-          "signal": "I(Q6:c)",
-          "trace_type": 258
+          "color": "rgb(166, 86, 40)",
+          "signal": "V(/Stg4_A)",
+          "trace_type": 257
         },
         {
-          "color": "rgb(152, 78, 163)",
-          "signal": "V(/Vlfo)",
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(/vFB)",
           "trace_type": 257
         }
       ]
@@ -53,50 +53,25 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(55, 126, 184)",
-          "signal": "V(/In1) (gain)",
-          "trace_type": 521
-        },
-        {
-          "color": "rgb(255, 255, 51)",
-          "signal": "V(/InGainIn) (gain)",
-          "trace_type": 521
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/OutSum_A) (phase)",
+          "trace_type": 517
         },
         {
           "color": "rgb(228, 26, 28)",
-          "signal": "V(/Stg1) (phase)",
+          "signal": "V(/OutSum_A) (gain)",
+          "trace_type": 521
+        },
+        {
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(/OutSum_B) (phase)",
           "trace_type": 517
         },
         {
-          "color": "rgb(166, 86, 40)",
-          "signal": "V(/Stg3) (phase)",
-          "trace_type": 517
-        },
-        {
-          "color": "rgb(77, 175, 74)",
-          "signal": "V(/Stg4) (phase)",
-          "trace_type": 517
-        },
-        {
-          "color": "rgb(255, 127, 0)",
-          "signal": "V(/Vin) (phase)",
-          "trace_type": 517
-        },
-        {
-          "color": "rgb(152, 78, 163)",
-          "signal": "V(/Vout) (gain)",
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(/OutSum_B) (gain)",
           "trace_type": 521
         }
-      ]
-    },
-    {
-      "analysis": "OP",
-      "commands": [
-        ".op",
-        ".kicad adjustpaths",
-        ".save all",
-        ".probe alli",
-        ".probe allp"
       ]
     }
   ],
