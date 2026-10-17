@@ -4449,12 +4449,6 @@
 		(uuid "f30ffcc8-729b-4863-ab02-1750b86dda15")
 	)
 	(junction
-		(at 84.963 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f593805f-4179-4f0a-aeac-bfd3915f2163")
-	)
-	(junction
 		(at 65.913 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4505,6 +4499,10 @@
 		(uuid "aca9317f-ed16-42ae-a23e-785fac29dcf3")
 	)
 	(no_connect
+		(at 93.98 87.63)
+		(uuid "ad47ab49-7089-413a-9264-6e10735bcce8")
+	)
+	(no_connect
 		(at 63.5 80.01)
 		(uuid "d55cae74-2529-4a90-aca2-bb49979efc95")
 	)
@@ -4531,20 +4529,6 @@
 	(no_connect
 		(at 76.962 119.126)
 		(uuid "fdc928ce-3409-450b-b239-c3e229c7741b")
-	)
-	(no_connect
-		(at 63.5 67.31)
-		(uuid "fe33fd2c-b1b7-46d3-8680-6af2afb8e314")
-	)
-	(wire
-		(pts
-			(xy 84.963 39.37) (xy 84.963 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0088bff3-8c58-4ce3-a7e8-4a6e84aa10ab")
 	)
 	(wire
 		(pts
@@ -4688,6 +4672,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.436 67.31) (xy 63.5 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28afa184-aa29-44ab-9b2d-3cdf1de6af89")
+	)
+	(wire
+		(pts
 			(xy 27.813 46.99) (xy 30.353 46.99)
 		)
 		(stroke
@@ -4815,16 +4809,6 @@
 			(type default)
 		)
 		(uuid "3fb25054-1291-4434-ae31-2ddb570fb071")
-	)
-	(wire
-		(pts
-			(xy 104.902 87.63) (xy 93.98 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "412d01f0-cb3d-4f7f-9ee3-3b5074dd4559")
 	)
 	(wire
 		(pts
@@ -5178,7 +5162,7 @@
 	)
 	(wire
 		(pts
-			(xy 84.963 31.75) (xy 95.123 31.75)
+			(xy 81.153 31.75) (xy 95.123 31.75)
 		)
 		(stroke
 			(width 0)
@@ -5638,16 +5622,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.153 31.75) (xy 84.963 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5d2ea89-f62e-4129-939b-baa3685a24d4")
-	)
-	(wire
-		(pts
 			(xy 45.593 54.61) (xy 46.863 54.61)
 		)
 		(stroke
@@ -5697,12 +5671,12 @@
 		(uuid "ff84ed17-fac0-4bc5-b9a1-af62e761cf9d")
 	)
 	(label "BypLED"
-		(at 104.902 87.63 0)
+		(at 59.436 67.31 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "18879ec2-3a95-4b49-83ed-9fb937cfe3fa")
 	)
@@ -10716,88 +10690,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 84.963 35.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b783715f-050d-469f-a9ff-a37e3961935b")
-		(property "Reference" "C21"
-			(at 88.265 34.2899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 88.265 36.8299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 85.9282 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 84.963 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 84.963 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "85708d75-bcaf-4ebe-af97-8abe56c7b7a0")
-		)
-		(pin "1"
-			(uuid "6ff0fd1a-050a-451f-bdb9-b35c7c926df4")
-		)
-		(instances
-			(project "PhaserPedalBoard"
-				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/337bd860-9d0a-468c-ab48-5592dad52d55"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 27.94 128.524 0)
 		(unit 1)
@@ -11624,85 +11516,6 @@
 			(project "PhaserPedalBoard"
 				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/337bd860-9d0a-468c-ab48-5592dad52d55"
 					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 84.963 40.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d5aa1d67-a8d8-47d1-99ad-35b9ba48b396")
-		(property "Reference" "#PWR039"
-			(at 84.963 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 84.963 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 84.963 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 84.963 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 84.963 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f20bd3c6-ab91-4d6e-847d-80a3f12f6d0b")
-		)
-		(instances
-			(project "PhaserPedalBoard"
-				(path "/121c4899-4e95-4dc0-b332-63e8ed3089d8/337bd860-9d0a-468c-ab48-5592dad52d55"
-					(reference "#PWR039")
 					(unit 1)
 				)
 			)
