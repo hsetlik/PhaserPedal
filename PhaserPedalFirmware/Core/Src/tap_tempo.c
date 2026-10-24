@@ -14,53 +14,40 @@ static uint16_t tapBufHead = 0;
 static inline float tap_buf_read(uint16_t idx){
     return tapBuffer[(idx + tapBufHead) % TAP_BUF_SIZE];
 }
+// k = 0 is the newest tap, k = 1 the one before it, etc.
+static inline float tap_buf_read_recent(uint16_t k){
+    return tapBuffer[(tapBufHead + TAP_BUF_SIZE - 1 - k) % TAP_BUF_SIZE];
+}
 static inline void tap_buf_push(float value){
     tapBuffer[tapBufHead] = value;
     tapBufHead = (tapBufHead + 1) % TAP_BUF_SIZE;
 }
-static uint16_t oldest_recent_tap(float minTime){
-    if(minTime < 0.0f){
-        minTime = 0.0f;
-        return 0;
+static inline uint16_t num_taps_within(float lookbackSeconds, uint16_t maxToCheck){
+    const float minTime = get_global_time() - lookbackSeconds;
+    uint16_t t = 0;
+    while(tap_buf_read_recent(t) >= minTime && t < maxToCheck){
+        ++t;
     }
-    float oldest = get_global_time();
-    uint16_t oldestIdx = 0;
-    for(uint16_t i = 0; i < TAP_BUF_SIZE; ++i){
-        if(tapBuffer[i] >= minTime){
-            if(tapBuffer[i] < oldest) {
-                oldest = tapBuffer[i];
-                oldestIdx = i;
-            }
-        }
-    }
-    return oldestIdx;
+    return t;
 }
 
-float tap_tempo_current_hz_estimate(){
-    float minTime =  get_global_time() - LOOKBACK_SECONDS;
-    const uint16_t oldestIdx = oldest_recent_tap(minTime);
-    uint16_t i = 0;
-    uint16_t lowerIdx = (oldestIdx + i) % TAP_BUF_SIZE;
-    uint16_t upperIdx = (lowerIdx + 1) % TAP_BUF_SIZE;
-    float diffSum = 0.0f;
-    while(tapBuffer[upperIdx] >= minTime && tapBuffer[upperIdx] > tapBuffer[lowerIdx] && i < TAP_BUF_SIZE){
-        diffSum += tapBuffer[upperIdx] - tapBuffer[lowerIdx];
-        ++i;
-        lowerIdx = (oldestIdx + i) % TAP_BUF_SIZE;
-        upperIdx = (lowerIdx + 1) % TAP_BUF_SIZE;
+// average interval (seconds) across the `numTaps` most recent taps
+static float tap_avg_interval(uint16_t numTaps){
+    if(numTaps < 2 || numTaps > TAP_BUF_SIZE){
+        return 0.0f;
     }
-    const float avgPeriod = diffSum / (float)i;
-    return 1.0f / avgPeriod;
+    const float newest = tap_buf_read_recent(0);
+    const float oldest = tap_buf_read_recent(numTaps - 1);
+    return (newest - oldest) / (float)(numTaps - 1);
+}
+
+float tap_tempo_current_period(){
+    tap_avg_interval(num_taps_within(3.0f, 4));
 }
 
 bool tap_tempo_was_tapped_within(float length){
     const float minTime = get_global_time() - length;
-    for(uint16_t i = 0; i < TAP_BUF_SIZE; ++i){
-        if(tap_buf_read(i) >= minTime){
-            return true;
-        }
-    }
-    return false;
+    return tap_buf_read_recent(0) >= minTime;
 }
 void tap_tempo_init(){
     tapBtn.mask = 0xFFF0;

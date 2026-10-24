@@ -568,8 +568,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
     if(speedKnobMoved){
       inTapMode = false;
       speedKnobMoved = false;
-    } else {
-      
+    } else if (tap_tempo_was_tapped_within(0.01f)){
+      inTapMode = true;
+      lfo_update_period(&lfo, tap_tempo_current_period());
     }
 
   }
