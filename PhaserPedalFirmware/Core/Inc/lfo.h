@@ -14,6 +14,9 @@ typedef struct {
 void lfo_init_state(lfo_state* lfo);
 
 uint16_t lfo_next_value(lfo_state* lfo);
+// these update functions handle all the math involved in these values changing
+void lfo_update_period(lfo_state* lfo, float newPeriod);
+void lfo_update_peak_phase(lfo_state* lfo, float newPeakPhase);
 
 
 #endif

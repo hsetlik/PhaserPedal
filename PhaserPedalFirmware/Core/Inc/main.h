@@ -32,7 +32,6 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <stdbool.h>
-#include <stdarg.h>
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -57,6 +56,14 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 float get_global_time();
+inline bool fequal(float a, float b){
+  const float diff = a > b ? a - b : b - a;
+  return diff < 0.0000001f;
+}
+inline bool fwithin_error(float a, float b, float maxError){
+  const float diff = a > b ? a - b : b - a;
+  return (diff / a) < maxError;
+}
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

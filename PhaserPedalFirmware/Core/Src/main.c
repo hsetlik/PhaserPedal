@@ -21,7 +21,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "tap_tempo.h"
+#include "lfo.h"
+#include "norm_range.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -31,7 +33,13 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define SPEED_MIN 0.15f
+#define SPEED_MAX 10.0f
+#define SPEED_CENTER 1.3f
 
+#define SHAPE_MIN 0.03f
+#define SHAPE_MAX 0.97f
+#define SHAPE_CENTER 0.5f
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -47,6 +55,7 @@ DMA_HandleTypeDef hdma_dac_ch1;
 
 TIM_HandleTypeDef htim2;
 TIM_HandleTypeDef htim6;
+TIM_HandleTypeDef htim21;
 
 /* USER CODE BEGIN PV */
 // main DMA buffer
@@ -56,6 +65,14 @@ uint16_t* const dmaPtrB = &dmaBuf[DMA_BUF_SIZE];
 volatile bool bufferReady = false;
 uint16_t* nextBuffer = dmaPtrA;
 lfo_state lfo;
+bool speedKnobMoved = false;
+bool inTapMode = false;
+// knob state
+float currentSpeedValue = 0.0f;
+float currentShapeValue = 0.0f;
+// knob ranges
+norm_range_t speedRange;
+norm_range_t shapeRange;
 // global time stuff
 static const float secsIncrement = 1.0f / (float)TAP_SAMPLE_RATE;
 static float globalSeconds = 0.0f;
@@ -71,8 +88,10 @@ static void MX_DAC_Init(void);
 static void MX_ADC_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_TIM6_Init(void);
+static void MX_TIM21_Init(void);
 /* USER CODE BEGIN PFP */
-
+void readPotADCs();
+void initControlRanges();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -83,6 +102,41 @@ void fillNextBuffer(uint16_t* buf){
   }
 }
 
+static float readADCChannel(uint32_t chselMask){
+  // select only this channel so each start does exactly one conversion
+  // (avoids an overrun when scanning both channels back to back)
+  hadc.Instance->CHSELR = chselMask;
+  if(HAL_ADC_Start(&hadc) != HAL_OK){
+    Error_Handler();
+  }
+  if(HAL_ADC_PollForConversion(&hadc, 10) != HAL_OK){
+    Error_Handler();
+  }
+  const uint32_t raw = HAL_ADC_GetValue(&hadc);
+  HAL_ADC_Stop(&hadc);
+  return (float)raw / 4095.0f;
+}
+
+void readPotADCs(){
+  const float newSpeedValue = readADCChannel(ADC_CHSELR_CHSEL1);
+  const float newShapeValue = readADCChannel(ADC_CHSELR_CHSEL2);
+  // update if the value has changed by more than 3%
+  if(!fwithin_error(currentSpeedValue, newSpeedValue, 0.03f)){
+    currentSpeedValue = newSpeedValue;
+    lfo_update_period(&lfo, 1.0f / norm_range_denormalize(&speedRange, currentSpeedValue));
+    speedKnobMoved = true;
+  }
+  if(!fwithin_error(currentShapeValue, newShapeValue, 0.03f)){
+    currentShapeValue = newShapeValue;
+    lfo_update_peak_phase(&lfo, norm_range_denormalize(&shapeRange, currentShapeValue));
+  }
+}
+
+
+void initControlRanges(){
+  norm_range_init(&speedRange, SPEED_MIN, SPEED_MAX, SPEED_CENTER);
+  norm_range_init(&shapeRange, SHAPE_MIN, SHAPE_MAX, SHAPE_CENTER);
+}
 /* USER CODE END 0 */
 
 /**
@@ -119,6 +173,7 @@ int main(void)
   MX_ADC_Init();
   MX_TIM2_Init();
   MX_TIM6_Init();
+  MX_TIM21_Init();
   /* USER CODE BEGIN 2 */
   // start the DMA stream for the DAC values
   if(HAL_DAC_Start_DMA(&hdac, DAC_CHANNEL_1, (uint32_t*)dmaBuf, DMA_BUF_SIZE * 2, DAC_ALIGN_12B_R)!= HAL_OK){
@@ -132,8 +187,14 @@ int main(void)
   if(HAL_TIM_Base_Start_IT(&htim6)!= HAL_OK){
     Error_Handler();
   }
+  // start the timer for checking the knobs
+  if(HAL_TIM_Base_Start_IT(&htim21)!= HAL_OK){
+    Error_Handler();
+  }
   // initialize the LFO
   lfo_init_state(&lfo);
+  // initialize the control ranges
+  initControlRanges();
   //initialize the tap tempo
   tap_tempo_init();
   /* USER CODE END 2 */
@@ -220,7 +281,7 @@ static void MX_ADC_Init(void)
   hadc.Init.OversamplingMode = DISABLE;
   hadc.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV2;
   hadc.Init.Resolution = ADC_RESOLUTION_12B;
-  hadc.Init.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
+  hadc.Init.SamplingTime = ADC_SAMPLETIME_79CYCLES_5;
   hadc.Init.ScanConvMode = ADC_SCAN_DIRECTION_FORWARD;
   hadc.Init.DataAlign = ADC_DATAALIGN_RIGHT;
   hadc.Init.ContinuousConvMode = DISABLE;
@@ -384,6 +445,51 @@ static void MX_TIM6_Init(void)
 }
 
 /**
+  * @brief TIM21 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM21_Init(void)
+{
+
+  /* USER CODE BEGIN TIM21_Init 0 */
+
+  /* USER CODE END TIM21_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM21_Init 1 */
+
+  /* USER CODE END TIM21_Init 1 */
+  htim21.Instance = TIM21;
+  htim21.Init.Prescaler = 3;
+  htim21.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim21.Init.Period = 59999;
+  htim21.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim21.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim21) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim21, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_UPDATE;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim21, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM21_Init 2 */
+
+  /* USER CODE END TIM21_Init 2 */
+
+}
+
+/**
   * Enable DMA controller clock
   */
 static void MX_DMA_Init(void)
@@ -439,11 +545,11 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 //=====================================================================================
 // DAC callbacks------------------------------------------
-void HAL_DAC_ConvHalfCpltCallbackCh1(DAC_HandleTypeDef *){
+void HAL_DAC_ConvHalfCpltCallbackCh1(DAC_HandleTypeDef * dac){
   nextBuffer = dmaPtrA;
   bufferReady = true;
 }
-void HAL_DAC_ConvCpltCallbackCh1(DAC_HandleTypeDef *){
+void HAL_DAC_ConvCpltCallbackCh1(DAC_HandleTypeDef * dac){
   nextBuffer = dmaPtrB;
   bufferReady = true;
 }
@@ -456,6 +562,16 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
   if(htim == &htim6){
     tap_tempo_update((bool)HAL_GPIO_ReadPin(TAP_IN_GPIO_Port, TAP_IN_Pin));
     globalSeconds += secsIncrement;
+  } else if (htim == &htim21){
+    readPotADCs();
+    // if the speed control moved, don't bother checking on the tap tempo
+    if(speedKnobMoved){
+      inTapMode = false;
+      speedKnobMoved = false;
+    } else {
+      
+    }
+
   }
 }
 //=====================================================================================

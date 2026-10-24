@@ -48,6 +48,7 @@ set(SRC_DIR ${CMAKE_CURRENT_LIST_DIR}/Core/Src)
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
     ${SRC_DIR}/lfo.c
+    ${SRC_DIR}/norm_range.c
     ${SRC_DIR}/tap_tempo.c
 
 )
